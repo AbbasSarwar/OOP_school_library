@@ -18,5 +18,5 @@ class Person
   end
 end
 
-n1 = Person.new(1, 18, "Abbas")
+n1 = Person.new(1, 18, 'Abbas')
 puts n1.of_age?
