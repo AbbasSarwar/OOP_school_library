@@ -1,3 +1,4 @@
+rubocop:disable Lint/ScriptPermission
 #!/usr/bin/env ruby
 require_relative 'app'
 
@@ -64,7 +65,7 @@ end
 
 def main
   app = App.new
-  puts "Welcome to the School Library App.!\n\n"
+  puts "Welcome to the School Library App!\n\n"
 
   loop do
     puts list_options
