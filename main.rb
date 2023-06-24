@@ -2,11 +2,11 @@ require_relative 'app'
 
 def list_options
   '
-      1 - Add a book
-      2 - Show all books
-      3 - Add a person
-      4 - Show all people
-      5 - Add a rental
+      1 - List all books
+      2 - List all people
+      3 - Add a book
+      4 - Create a person
+      5 - Create a rental
       6 - Show all rentals for a given ID
       7 - Exit
     '
@@ -14,10 +14,10 @@ end
 
 def options(option, app)
   actions = {
-    1 => method(:add_book),
-    2 => method(:list_books),
-    3 => method(:add_person),
-    4 => method(:list_people),
+    1 => method(:list_books),
+    2 => method(:list_people),
+    3 => method(:add_book),
+    4 => method(:add_person),
     5 => method(:add_rental),
     6 => method(:list_rentals),
     7 => method(:exit_option)
